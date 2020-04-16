@@ -46,13 +46,13 @@ void decrement_state_data(int dec) {
 void state_probe(void) {
   my_states_data *init_data = calloc(1, sizeof(my_states_data));
   if (!init_data) {
-    printf("Failed to probe state %d\n", states_get_state_id);
+    printf("Failed to probe state %u\n", states_get_state_id);
     exit(-1);
   }
 
   states_set_data(init_data);
 
-  printf("State %d probed\n", states_get_state_id());
+  printf("State %u probed\n", states_get_state_id());
 }
 
 void state_one_run(void) { increment_state_data(1); }
