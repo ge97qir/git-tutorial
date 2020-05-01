@@ -1,0 +1,15 @@
+diff --git a/src/hello.c b/src/hello.c
+index 3f2372b..7a339d2 100644
+--- a/src/hello.c
++++ b/src/hello.c
+@@ -1,8 +1,9 @@
+ #include <stdio.h>
++#include "espl_lib.h"
+ 
+ int main()
+ {
+ 	printf("Hello ESPL!\n");
+-
++	printf("Another print statement :)\n");
+ 	return 0;
+ }
